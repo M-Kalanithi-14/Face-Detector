@@ -6,7 +6,7 @@ simplefilter("ignore")
 TrainedFaceData =  cv2.CascadeClassifier("haarcascades_frontalfaces.xml")
 
 #This is For a Static Single Image Detection
-img = cv2.imread("sample.png")
+img = cv2.imread("sample1.png")
 GrayScaleImg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 face_coor = TrainedFaceData.detectMultiScale(GrayScaleImg)
